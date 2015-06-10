@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="rzdMini:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/rzdMini_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="rzdMini/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rzdMini" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax-inject" />
+          <element id="library" level="project" name="primefaces-5.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

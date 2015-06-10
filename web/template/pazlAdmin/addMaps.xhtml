@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+<ui:composition>
+    <h:form>
+        <h3>Добавить маршрут</h3>
+        <h:outputLabel value="#{maps.error}"/>
+        <table>
+
+            <tr>
+                <td>
+                    Станция отправления
+                    <h:inputText value="#{maps.stationGo}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Станция прибытия
+                    <h:inputText value="#{maps.stationDown}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Время отправления
+
+                    <h:inputText  value="#{maps.taimGo}"/>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Время в пути (Часов)
+                    <h:inputText value="#{maps.taimRoad}"/>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h:commandButton value="Сохранить" action="#{maps.procesAddMaps}"/>
+                </td>
+            </tr>
+        </table>
+    </h:form>
+</ui:composition>
+</body>
+</html>

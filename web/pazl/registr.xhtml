@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html" xml:lang="en" lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="include/style.css"/>
+</head>
+<body>
+<ui:composition>
+    <h:form id="regForm">
+        <h3 align="center">Регистрация</h3>
+        <table align="center" id="tableReg">
+            <tr>
+                <td align="right">
+                    Имя
+                    <h:inputText size="10" id="nameR" value="#{SessionBean.meS}" required="true" requiredMessage="поле Имя обязательно для заполнения"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Логин
+                    <h:inputText size="10" id="loginR" value="#{SessionBean.logins}" required="true" requiredMessage="поле Логин обязательно для заполнения"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Пароль
+                    <h:inputText size="10" id="passR" value="#{SessionBean.passs}" required="true" requiredMessage="поле Пароль обязательно для заполнения"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Почта
+                    <h:inputText size="10" id="emailR" value="#{SessionBean.emaill}" required="true" requiredMessage="поле Почта обязательно для заполнения"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <h:commandButton value="Продолжить" action="#{SessionBean.procesRegistr()}"/>
+                </td>
+            </tr>
+        </table>
+    </h:form>
+</ui:composition>
+</body>
+</html>

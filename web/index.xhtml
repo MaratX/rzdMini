@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="include/style.css"/>
+</head>
+<body>
+<h:form id="indexForm">
+    <table align="center">
+        <tr align="center">
+            <td>
+                <h2>
+                    <h:commandButton value="Вход" id="open"  action="#{SessionBean.layoutO()}"/>
+                    <hr/>
+                    <h:commandButton value="Регистрация" id="reg"  action="#{SessionBean.layoutR()}"/>
+                </h2>
+            </td>
+        </tr>
+    </table>
+</h:form>
+</body>
+
+</html>
+
